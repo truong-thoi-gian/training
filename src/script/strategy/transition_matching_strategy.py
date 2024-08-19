@@ -249,6 +249,9 @@ def {}(driver):
     ) -> List[Optional[Variation]]:
         steps = [step for step in steps_in_page if step.operation_type == operation_type]
         elems = self.__element_container.get_elems_of(operation_type)
+        print(f"list element type {operation_type} is {elems}")
+        for element in elems:
+            print(vars(element))
         variations: List[Optional[Variation]] = []
         candidates_list = self.__filter_elements(elems, steps, vector_calculator)
         for elems_candidate in itertools.product(*candidates_list):

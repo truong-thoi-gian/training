@@ -41,11 +41,20 @@ class VectorCalculator:
         else:
             return None
 
+    def get_ref_text_vector(self, elem: Element):
+        if len(elem.ref_words) != 0:
+            return self.__get_words_vector_weighted(elem.ref_words)
+        else:
+            return None
+
     def get_similarity(self, query, elem: Element) -> float:
         query_vector = self.__get_words_vector(query)
         cos_sim_words = self.__cosine_similarity(query_vector, elem.attr_vector)
         if len(elem.text_words) != 0:
             cos_sim_text = self.__cosine_similarity(query_vector, elem.text_vector)
+
+            # cos_sim_ref = self.__cosine_similarity(query_vector, elem.ref_vector)
+
             return (cos_sim_words + Setting.TEXT_WEIGHT * cos_sim_text) / (1 + Setting.TEXT_WEIGHT)
         else:
             return cos_sim_words

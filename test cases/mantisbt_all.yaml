@@ -3,11 +3,11 @@
 # Create Issue
 # https://www.mantisbt.org/docs/master/en-US/Admin_Guide/html-desktop/#admin.lifecycle.create
 create_issue:
-  - open "http://localhost:8989/login_page.php"
-  - enter "administrator" in "username"
+  - open "https://zotek8.mantishub.io/login_page.php"
+  - enter "ducnv@zotek8.com" in "username"
   - click "login"
   - ---
-  - enter "root" in "password"
+  - enter "Abcd1234" in "password"
   - click "login"
   - ---
   - click "Report Issue"
@@ -22,11 +22,11 @@ create_issue:
 # Monitor Issue
 # https://www.mantisbt.org/docs/master/en-US/Admin_Guide/html-desktop/#admin.pages.monitor
 monitor_issue:
-  - open "http://localhost:8989/login_page.php"
-  - enter "administrator" in "username"
+  - open "https://zotek8.mantishub.io/login_page.php"
+  - enter "ducnv@zotek8.com" in "username"
   - click "login"
   - ---
-  - enter "root" in "password"
+  - enter "Abcd1234" in "password"
   - click "login"
   - ---
   - click "View Issues"
@@ -38,11 +38,11 @@ monitor_issue:
 # Assign to me
 # https://www.mantisbt.org/docs/master/en-US/Admin_Guide/html-desktop/#admin.pages.assigntome
 assign_issue:
-  - open "http://localhost:8989/login_page.php"
-  - enter "administrator" in "username"
+  - open "https://zotek8.mantishub.io/login_page.php"
+  - enter "ducnv@zotek8.com" in "username"
   - click "login"
   - ---
-  - enter "root" in "password"
+  - enter "Abcd1234" in "password"
   - click "login"
   - ---
   - click "View Issues"
@@ -55,11 +55,11 @@ assign_issue:
 # Edit Issue
 # https://www.mantisbt.org/docs/master/en-US/Admin_Guide/html-desktop/#admin.pages.issueedit
 edit_issue:
-  - open "http://localhost:8989/login_page.php"
-  - enter "administrator" in "username"
+  - open "https://zotek8.mantishub.io/login_page.php"
+  - enter "ducnv@zotek8.com" in "username"
   - click "login"
   - ---
-  - enter "root" in "password"
+  - enter "Abcd1234" in "password"
   - click "login"
   - ---
   - click "View Issues"
@@ -76,11 +76,11 @@ edit_issue:
 # Resolve Issue
 # https://www.mantisbt.org/docs/master/en-US/Admin_Guide/html-desktop/#admin.pages.resolve
 resolve_issue:
-  - open "http://localhost:8989/login_page.php"
-  - enter "administrator" in "username"
+  - open "https://zotek8.mantishub.io/login_page.php"
+  - enter "ducnv@zotek8.com" in "username"
   - click "login"
   - ---
-  - enter "root" in "password"
+  - enter "Abcd1234" in "password"
   - click "login"
   - ---
   - click "View Issues"
@@ -98,11 +98,11 @@ resolve_issue:
 # Close Issue
 # https://www.mantisbt.org/docs/master/en-US/Admin_Guide/html-desktop/#admin.pages.close
 close_issue:
-  - open "http://localhost:8989/login_page.php"
-  - enter "administrator" in "username"
+  - open "https://zotek8.mantishub.io/login_page.php"
+  - enter "ducnv@zotek8.com" in "username"
   - click "login"
   - ---
-  - enter "root" in "password"
+  - enter "Abcd1234" in "password"
   - click "login"
   - ---
   - click "View Issues"
@@ -118,11 +118,11 @@ close_issue:
 # Reopen Issue
 # https://www.mantisbt.org/docs/master/en-US/Admin_Guide/html-desktop/#admin.pages.reopen
 reopen_issue:
-  - open "http://localhost:8989/login_page.php"
-  - enter "administrator" in "username"
+  - open "https://zotek8.mantishub.io/login_page.php"
+  - enter "ducnv@zotek8.com" in "username"
   - click "login"
   - ---
-  - enter "root" in "password"
+  - enter "Abcd1234" in "password"
   - click "login"
   - ---
   - click "View Issues"
@@ -141,11 +141,11 @@ reopen_issue:
 # Delete Issue
 # https://www.mantisbt.org/docs/master/en-US/Admin_Guide/html-desktop/#admin.pages.delete
 delete_issue:
-  - open "http://localhost:8989/login_page.php"
-  - enter "administrator" in "username"
+  - open "https://zotek8.mantishub.io/login_page.php"
+  - enter "ducnv@zotek8.com" in "username"
   - click "login"
   - ---
-  - enter "root" in "password"
+  - enter "Abcd1234" in "password"
   - click "login"
   - ---
   - click "View Issues"
@@ -163,11 +163,11 @@ delete_issue:
 # https://www.mantisbt.org/docs/master/en-US/Admin_Guide/html-desktop/#admin.user.create
 
 create_user_account:
-  - open "http://localhost:8989/login_page.php"
-  - enter "administrator" in "username"
+  - open "https://zotek8.mantishub.io/login_page.php"
+  - enter "ducnv@zotek8.com" in "username"
   - click "login"
   - ---
-  - enter "root" in "password"
+  - enter "Abcd1234" in "password"
   - click "login"
   - ---
   - click "manage"
@@ -184,11 +184,11 @@ create_user_account:
 # https://www.mantisbt.org/docs/master/en-US/Admin_Guide/html-desktop/#admin.user.enable
 
 disable_user_account:
-  - open "http://localhost:8989/login_page.php"
-  - enter "administrator" in "username"
+  - open "https://zotek8.mantishub.io/login_page.php"
+  - enter "ducnv@zotek8.com" in "username"
   - click "login"
   - ---
-  - enter "root" in "password"
+  - enter "Abcd1234" in "password"
   - click "login"
   - ---
   - click "manage"
@@ -203,11 +203,11 @@ disable_user_account:
 # Forgot Password and Reset Password
 # https://www.mantisbt.org/docs/master/en-US/Admin_Guide/html-desktop/#admin.user.passwordreset
 reset_password:
-  - open "http://localhost:8989/login_page.php"
-  - enter "administrator" in "username"
+  - open "https://zotek8.mantishub.io/login_page.php"
+  - enter "ducnv@zotek8.com" in "username"
   - click "login"
   - ---
-  - enter "root" in "password"
+  - enter "Abcd1234" in "password"
   - click "login"
   - ---
   - click "manage"
@@ -221,11 +221,11 @@ reset_password:
 # Impersonating a user
 # https://www.mantisbt.org/docs/master/en-US/Admin_Guide/html-desktop/#admin.user.impersonationt
 impersonate_user:
-  - open "http://localhost:8989/login_page.php"
-  - enter "administrator" in "username"
+  - open "https://zotek8.mantishub.io/login_page.php"
+  - enter "ducnv@zotek8.com" in "username"
   - click "login"
   - ---
-  - enter "root" in "password"
+  - enter "Abcd1234" in "password"
   - click "login"
   - ---
   - click "manage"
@@ -239,11 +239,11 @@ impersonate_user:
 # Changing Password
 # https://www.mantisbt.org/docs/master/en-US/Admin_Guide/html-desktop/#admin.user.passwordchange
 change_password:
-  - open "http://localhost:8989/login_page.php"
-  - enter "administrator" in "username"
+  - open "https://zotek8.mantishub.io/login_page.php"
+  - enter "ducnv@zotek8.com" in "username"
   - click "login"
   - ---
-  - enter "root" in "password"
+  - enter "Abcd1234" in "password"
   - click "login"
   - ---
   - click "dropdown list of administrator"
@@ -258,11 +258,11 @@ change_password:
 # Deleting User Accounts
 # https://www.mantisbt.org/docs/master/en-US/Admin_Guide/html-desktop/#admin.user.delete
 delete_user_account:
-  - open "http://localhost:8989/login_page.php"
-  - enter "administrator" in "username"
+  - open "https://zotek8.mantishub.io/login_page.php"
+  - enter "ducnv@zotek8.com" in "username"
   - click "login"
   - ---
-  - enter "root" in "password"
+  - enter "Abcd1234" in "password"
   - click "login"
   - ---
   - click "manage"
@@ -284,11 +284,11 @@ delete_user_account:
 
 # Create Projects
 create_projects:
-  - open "http://localhost:8989/login_page.php"
-  - enter "administrator" in "username"
+  - open "https://zotek8.mantishub.io/login_page.php"
+  - enter "ducnv@zotek8.com" in "username"
   - click "login"
   - ---
-  - enter "root" in "password"
+  - enter "Abcd1234" in "password"
   - click "login"
   - ---
   - click "Manage"
@@ -305,11 +305,11 @@ create_projects:
 
 # Create Tags
 create_tags:
-  - open "http://localhost:8989/login_page.php"
-  - enter "administrator" in "username"
+  - open "https://zotek8.mantishub.io/login_page.php"
+  - enter "ducnv@zotek8.com" in "username"
   - click "login"
   - ---
-  - enter "root" in "password"
+  - enter "Abcd1234" in "password"
   - click "login"
   - ---
   - click "Manage"
@@ -322,11 +322,11 @@ create_tags:
 
 # Create Custom Fields
 create_custom_fields:
-  - open "http://localhost:8989/login_page.php"
-  - enter "administrator" in "username"
+  - open "https://zotek8.mantishub.io/login_page.php"
+  - enter "ducnv@zotek8.com" in "username"
   - click "login"
   - ---
-  - enter "root" in "password"
+  - enter "Abcd1234" in "password"
   - click "login"
   - ---
   - click "Manage"
@@ -338,11 +338,11 @@ create_custom_fields:
 
 # Create Global Profiles
 create_global_profiles:
-  - open "http://localhost:8989/login_page.php"
-  - enter "administrator" in "username"
+  - open "https://zotek8.mantishub.io/login_page.php"
+  - enter "ducnv@zotek8.com" in "username"
   - click "login"
   - ---
-  - enter "root" in "password"
+  - enter "Abcd1234" in "password"
   - click "login"
   - ---
   - click "Manage"
@@ -357,11 +357,11 @@ create_global_profiles:
 
 # Update Projects
 update_projects:
-  - open "http://localhost:8989/login_page.php"
-  - enter "administrator" in "username"
+  - open "https://zotek8.mantishub.io/login_page.php"
+  - enter "ducnv@zotek8.com" in "username"
   - click "login"
   - ---
-  - enter "root" in "password"
+  - enter "Abcd1234" in "password"
   - click "login"
   - ---
   - click "Manage"
@@ -377,11 +377,11 @@ update_projects:
 
 # Update Tags
 update_tags:
-  - open "http://localhost:8989/login_page.php"
-  - enter "administrator" in "username"
+  - open "https://zotek8.mantishub.io/login_page.php"
+  - enter "ducnv@zotek8.com" in "username"
   - click "login"
   - ---
-  - enter "root" in "password"
+  - enter "Abcd1234" in "password"
   - click "login"
   - ---
   - click "Manage"
@@ -398,11 +398,11 @@ update_tags:
 
 # Update Custom Fields
 update_custom_fields:
-  - open "http://localhost:8989/login_page.php"
-  - enter "administrator" in "username"
+  - open "https://zotek8.mantishub.io/login_page.php"
+  - enter "ducnv@zotek8.com" in "username"
   - click "login"
   - ---
-  - enter "root" in "password"
+  - enter "Abcd1234" in "password"
   - click "login"
   - ---
   - click "Manage"
@@ -420,11 +420,11 @@ update_custom_fields:
 
 # Update Global Profiles
 update_global_profiles:
-  - open "http://localhost:8989/login_page.php"
-  - enter "administrator" in "username"
+  - open "https://zotek8.mantishub.io/login_page.php"
+  - enter "ducnv@zotek8.com" in "username"
   - click "login"
   - ---
-  - enter "root" in "password"
+  - enter "Abcd1234" in "password"
   - click "login"
   - ---
   - click "Manage"
@@ -441,11 +441,11 @@ update_global_profiles:
 
 # Delete Projects
 delete_projects:
-  - open "http://localhost:8989/login_page.php"
-  - enter "administrator" in "username"
+  - open "https://zotek8.mantishub.io/login_page.php"
+  - enter "ducnv@zotek8.com" in "username"
   - click "login"
   - ---
-  - enter "root" in "password"
+  - enter "Abcd1234" in "password"
   - click "login"
   - ---
   - click "Manage"
@@ -460,11 +460,11 @@ delete_projects:
 
 # Delete Tags
 delete_tags:
-  - open "http://localhost:8989/login_page.php"
-  - enter "administrator" in "username"
+  - open "https://zotek8.mantishub.io/login_page.php"
+  - enter "ducnv@zotek8.com" in "username"
   - click "login"
   - ---
-  - enter "root" in "password"
+  - enter "Abcd1234" in "password"
   - click "login"
   - ---
   - click "Manage"
@@ -479,11 +479,11 @@ delete_tags:
 
 # Delete Custom Fields
 delete_custom_fields:
-  - open "http://localhost:8989/login_page.php"
-  - enter "administrator" in "username"
+  - open "https://zotek8.mantishub.io/login_page.php"
+  - enter "ducnv@zotek8.com" in "username"
   - click "login"
   - ---
-  - enter "root" in "password"
+  - enter "Abcd1234" in "password"
   - click "login"
   - ---
   - click "Manage"
@@ -498,11 +498,11 @@ delete_custom_fields:
 
 # Delete Global Profiles
 delete_global_profiles:
-  - open "http://localhost:8989/login_page.php"
-  - enter "administrator" in "username"
+  - open "https://zotek8.mantishub.io/login_page.php"
+  - enter "ducnv@zotek8.com" in "username"
   - click "login"
   - ---
-  - enter "root" in "password"
+  - enter "Abcd1234" in "password"
   - click "login"
   - ---
   - click "Manage"

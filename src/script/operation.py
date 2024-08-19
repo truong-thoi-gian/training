@@ -106,11 +106,11 @@ class Enter(LocatableOperation):
 
     def to_code(self, locator: Locator):
         return (
-            "driver.find_element_by_{}('{}').clear()".format(
+            "driver.find_element('{}','{}').clear()".format(
                 locator.locator_type.value, locator.value
             )
             + "\n    "
-            + "driver.find_element_by_{}('{}').send_keys('{}')".format(
+            + "driver.find_element('{}','{}').send_keys('{}')".format(
                 locator.locator_type.value, locator.value, self.value
             )
         )
@@ -136,7 +136,7 @@ class Select(LocatableOperation):
         return OperationType.SELECT
 
     def to_code(self, locator: Locator):
-        return "Select(driver.find_element_by_{}('{}')).select_by_visible_text('{}')".format(
+        return "Select(driver.find_element('{}','{}')).select_by_visible_text('{}')".format(
             locator.locator_type.value, locator.value, self.value
         )
 
@@ -156,7 +156,7 @@ class Click(LocatableOperation):
         return OperationType.CLICK
 
     def to_code(self, locator: Locator):
-        return "driver.find_element_by_{}('{}').click()".format(
+        return "driver.find_element('{}','{}').click()".format(
             locator.locator_type.value, locator.value
         )
 
@@ -165,6 +165,7 @@ class Click(LocatableOperation):
         if Setting.SHOW_OPERATION:
             print("click {}".format(locator.value))
         driver_manager.click(locator)
+        sleep(3)
 
 
 class AssertTitle(CodableOperation):

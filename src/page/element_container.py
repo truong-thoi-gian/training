@@ -31,7 +31,12 @@ class ElementContainer:
             if attr_words == []:
                 continue
             text_words = self.__extract_text_words(bs_elem)
-            elem: Element = Element(bs_elem, i, attr_words, text_words)
+
+            ref_words = self.__extract_ref_words(bs_elem)
+            # if len(text_words) == 0:
+            #    text_words =  ref_words
+
+            elem: Element = Element(bs_elem, i, attr_words, text_words, ref_words)
             self.__elems.append(elem)
         self.__create_elem_dict()
 
@@ -39,6 +44,7 @@ class ElementContainer:
         for elem in self.elems:
             elem.attr_vector = vector_calculator.get_elem_vector(elem)
             elem.text_vector = vector_calculator.get_text_vector(elem)
+            elem.ref_vector = vector_calculator.get_ref_text_vector(elem)
 
     def __create_elem_dict(self):
         # clicked types of <input>
@@ -65,7 +71,7 @@ class ElementContainer:
                     words.extend(WordUtil.split(joined_str))
                 else:
                     words.extend(WordUtil.split(bs_elem[attr]))
-        words.extend(WordUtil.split(bs_elem.text))
+        words.extend(WordUtil.split(bs_elem.get_text(strip=True)))
         return WordUtil.filter(words)
 
     def __extract_text_words(self, bs_elem):
@@ -73,7 +79,36 @@ class ElementContainer:
         labels = self.__extract_label(bs_elem)
         for label in labels:
             words.extend(WordUtil.split(label))
-        words.extend(WordUtil.split(bs_elem.text))
+        words.extend(WordUtil.split(bs_elem.get_text(strip=True)))
+        
+        # el = bs_elem
+        # while el.get_text(strip=True) == "":
+        #     # Get the parent of the current element
+        #     parent = el.parent
+        #     # Check if parent exists
+        #     if parent.get_text(strip=True) != "":
+        #         words.extend(WordUtil.split(parent.get_text(strip=True)))
+        #         break
+            
+        #     # Move to the parent for the next iteration
+        #     el = parent
+
+        return WordUtil.filter(words)
+
+    def __extract_ref_words(self, bs_elem):
+        words = []
+        el = bs_elem
+        while el.get_text(strip=True) == "":
+            # Get the parent of the current element
+            parent = el.parent
+            # Check if parent exists
+            if parent.get_text(strip=True) != "":
+                words.extend(WordUtil.split(parent.get_text(strip=True)))
+                break
+            
+            # Move to the parent for the next iteration
+            el = parent
+        
         return WordUtil.filter(words)
 
     def __extract_label(self, bs_elem):

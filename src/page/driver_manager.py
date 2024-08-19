@@ -10,12 +10,12 @@ from selenium.webdriver.support.select import Select
 class DriverManager:
     def __init__(self):
         options = Options()
-        options.binary_location = Setting.BINARY_LOCATION
+        # options.binary_location = Setting.BINARY_LOCATION
         options.add_experimental_option("prefs", {"intl.accept_languages": "en_US"})
         options.add_argument("--no-sandbox")
         if Setting.HEADLESS:
             options.add_argument("--headless")
-        self.__driver = webdriver.Chrome(Setting.CHROMEDRIVER_LOCATION, chrome_options=options)
+        self.__driver = webdriver.Chrome(options=options)
 
     def quit(self):
         self.__driver.quit()
@@ -59,10 +59,10 @@ class DriverManager:
 
     def __locate(self, locator: Locator):
         if locator.locator_type == LocatorType.NAME:
-            return self.__driver.find_element_by_name(locator.value)
+            return self.__driver.find_element('name',locator.value)
         elif locator.locator_type == LocatorType.ID:
-            return self.__driver.find_element_by_id(locator.value)
+            return self.__driver.find_element('id',locator.value)
         elif locator.locator_type == LocatorType.LINK_TEXT:
-            return self.__driver.find_element_by_link_text(locator.value)
+            return self.__driver.find_element('link text',locator.value)
         elif locator.locator_type == LocatorType.XPATH:
-            return self.__driver.find_element_by_xpath(locator.value)
+            return self.__driver.find_element('xpath',locator.value)

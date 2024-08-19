@@ -2,7 +2,7 @@ from script.locator import Locator, LocatorType
 
 
 class Element:
-    def __init__(self, bs_elem, id_, attr_words, text_words):
+    def __init__(self, bs_elem, id_, attr_words, text_words, ref_words):
         self.__bs_elem = bs_elem
         self.__id = id_
         self.__name = bs_elem.name
@@ -11,6 +11,8 @@ class Element:
         self.__text_words = text_words
         self.__attr_vector = []
         self.__text_vector = []
+        self.__ref_vector = []
+        self.__ref_words = ref_words
 
     @property
     def id(self):
@@ -33,6 +35,10 @@ class Element:
         return self.__text_words
 
     @property
+    def ref_words(self):
+        return self.__ref_words
+
+    @property
     def attr_vector(self):
         return self.__attr_vector
 
@@ -47,6 +53,14 @@ class Element:
     @text_vector.setter
     def text_vector(self, text_vector):
         self.__text_vector = text_vector
+
+    @property
+    def ref_vector(self):
+        return self.__ref_vector
+
+    @ref_vector.setter
+    def ref_vector(self, ref_vector):
+        self.__ref_vector = ref_vector
 
     @property
     def xpath(self):

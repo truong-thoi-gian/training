@@ -26,5 +26,5 @@ allow_prereleases = true
 [scripts]
 experiment = "python3 src/main.py"
 gen = "python3 src/script_generator.py"
-test = "python3 test_script/runner.py"
+test = "python3 test_script/4.py"
 type-check = "mypy src"

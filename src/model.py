@@ -21,7 +21,7 @@ class Model:
             self.__model = gensim.models.fasttext.load_facebook_vectors(filePath)
         else:
             self.__model = gensim.models.KeyedVectors.load_word2vec_format(filePath, binary=True)
-        self.__vocab = self.__model.wv
+        self.__vocab = self.__model
 
     @property
     def model(self):

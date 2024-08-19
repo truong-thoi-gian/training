@@ -4,7 +4,7 @@ from enum import Enum
 class LocatorType(Enum):
     ID = "id"
     NAME = "name"
-    LINK_TEXT = "partial_link_text"
+    LINK_TEXT = "link text"
     XPATH = "xpath"
 
 
