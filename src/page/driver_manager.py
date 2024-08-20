@@ -14,7 +14,7 @@ class DriverManager:
         options.add_experimental_option("prefs", {"intl.accept_languages": "en_US"})
         options.add_argument("--no-sandbox")
         if Setting.HEADLESS:
-            options.add_argument("--headless")
+          options.add_argument("--headless")
         self.__driver = webdriver.Chrome(options=options)
 
     def quit(self):

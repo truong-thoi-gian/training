@@ -44,7 +44,7 @@ class ElementContainer:
         for elem in self.elems:
             elem.attr_vector = vector_calculator.get_elem_vector(elem)
             elem.text_vector = vector_calculator.get_text_vector(elem)
-            elem.ref_vector = vector_calculator.get_ref_text_vector(elem)
+            # elem.ref_vector = vector_calculator.get_ref_text_vector(elem)
 
     def __create_elem_dict(self):
         # clicked types of <input>

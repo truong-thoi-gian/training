@@ -6,7 +6,9 @@ from numpy import average, dot
 from numpy.linalg import norm
 
 import Setting
-from model import Model, ModelType
+from model import Model
+
+from model_type import ModelType
 from page.element import Element
 
 
@@ -42,10 +44,7 @@ class VectorCalculator:
             return None
 
     def get_ref_text_vector(self, elem: Element):
-        if len(elem.ref_words) != 0:
-            return self.__get_words_vector_weighted(elem.ref_words)
-        else:
-            return None
+        return None
 
     def get_similarity(self, query, elem: Element) -> float:
         query_vector = self.__get_words_vector(query)

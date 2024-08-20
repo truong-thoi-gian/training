@@ -65,6 +65,7 @@ class TestCaseParser:
                     elif re.fullmatch(r'assert title is "[^"]+"', raw_step):
                         step = AssertTitle(raw_step, tokens[3])
                     elif re.fullmatch(r'---', raw_step):
+                        print("new page", raw_step)
                         step = PageTransition(raw_step)
                     else:
                         raise ValueError("test case is invalid: {}".format(raw_step))

@@ -1,4 +1,4 @@
-from model import ModelType
+from model_type import ModelType
 
 # Basic
 BINARY_LOCATION = "/usr/bin/google-chrome"
@@ -18,10 +18,10 @@ SLEEP_TIME = 0  # wait between operations
 TRANSITION_SLEEP_TIME = 0  # wait after page transition
 SHOW_OPERATION = False
 IDF_WEIGHT = 1.5  # The closer to 1, the bigger
-TAG_CLICK = {"button", "img", "a", "span", "label"}  # click target tags
+TAG_CLICK = {"button", "img", "a"}  # click target tags
 
 # Transition-level search
-RESTART_DRIVER = False
+RESTART_DRIVER = True
 SEARCH_WIDTH = 5
 BEAM_WIDTH = 5
 PAGE_MATCHING_SEARCH = 10  # explore top n

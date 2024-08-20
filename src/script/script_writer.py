@@ -28,8 +28,9 @@ class ScriptWriter:
 from selenium.webdriver.support.select import Select
 {method_string}
 """
-        with open(filename, mode="w") as f:
-            f.write(script)
+        return script
+        # with open(filename, mode="w") as f:
+        #     f.write(script)
 
 
 class LocatorWriter:

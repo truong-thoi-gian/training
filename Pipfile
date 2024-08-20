@@ -16,6 +16,8 @@ pyvirtualdisplay = "*"
 numpy = "*"
 pyyaml = "*"
 networkx = "*"
+pyngrok = "*"
+flask = "*"
 
 [requires]
 python_version = "3.6"
@@ -28,3 +30,4 @@ experiment = "python3 src/main.py"
 gen = "python3 src/script_generator.py"
 test = "python3 test_script/4.py"
 type-check = "mypy src"
+pyngrok = "python3 src/ngrok.py"
